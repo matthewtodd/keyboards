@@ -142,7 +142,7 @@ case ${command} in
     export -f open
     set -x
     ${0} firmware
-    ${0} keymap -o
+    ${0} keymap
     ;;
 
   *)
