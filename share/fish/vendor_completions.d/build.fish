@@ -7,3 +7,4 @@ complete -c build -n "not __fish_seen_subcommand_from $commands" -a "firmware" -
 complete -c build -n "not __fish_seen_subcommand_from $commands" -a "keymap" -d "Draw keyboard keymap"
 complete -c build -n "not __fish_seen_subcommand_from $commands" -a "shell" -d "Start an interactive shell in the docker container"
 complete -c build -n "__fish_seen_subcommand_from firmware keymap" -n "not __fish_seen_argument -s k" -s k -x -a "$keyboards" -d "Select keyboard"
+complete -c build -n "__fish_seen_subcommand_from firmware" -n "not __fish_seen_argument -s c" -s c -d "Build clean"

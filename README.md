@@ -28,7 +28,7 @@ script][build] that uses a [Docker image][dockerfile].
 <!-- {{{markin
 build -h 2>/dev/null | sed -e "s/^/    /"
 }}}-->
-    usage: build [-I] firmware [-k <keyboard>]
+    usage: build [-I] firmware [-k <keyboard>] [-c]
            build [-I] keymap [-k <keyboard>]
            build [-I] shell
     
@@ -42,6 +42,7 @@ build -h 2>/dev/null | sed -e "s/^/    /"
     
       options:
         -k <keyboard>  select keyboard
+        -c             build clean
     
       keyboards:
         ferris_sweep (default)
