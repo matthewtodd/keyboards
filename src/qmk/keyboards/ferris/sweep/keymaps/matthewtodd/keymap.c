@@ -184,6 +184,8 @@ combo_t key_combos[] = {
 #ifdef COMBO_MUST_TAP_PER_COMBO
 bool get_combo_must_tap(uint16_t combo_index, combo_t *combo) {
   switch (combo_index) {
+  case NT_ESC:
+    return true;
   case CA_LPRN:
     return true;
   case AE_RPRN:
